@@ -12,8 +12,8 @@ class Config(object):
     #tg bot token
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     #api id and hash get it from my.telegram.org
-    API_ID = int(os.environ.get("API_ID", 27190467))
-    API_HASH = os.environ.get("API_HASH", "ff6bc6ad2faba520f426cf04ca7f5773")
+    API_ID = int(os.environ.get("API_ID", 467))
+    API_HASH = os.environ.get("API_HASH", "ff6bc6ad204ca7f5773")
     PROXY = os.environ.get("PROXY", "")
     DB_URL = os.environ.get("DB_URL", "?retryWrites=true&w=majority&appName=Cluster0")
     OWNER_ID = [int(i) for i in  os.environ.get("OWNER_ID", "7126874550").split(" ")]
