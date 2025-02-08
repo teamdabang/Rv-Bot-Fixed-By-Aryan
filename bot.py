@@ -99,15 +99,15 @@ PLANS_TEXT = '''**Here You will find all of our Premium Plans:-**
         **Plan Name:-** `Starter`
         **Price:- **
               **USD:-** `9$`
-              **INR:-** `299₹`
-        **DRM Video Limit:-** `100 Videos`
+              **INR:-** `199₹`
+        **DRM Video Limit:-** `500 Videos`
         **validity:-** `30 days`
 
     🔵 **Plan 3:-**
         **Plan Name:-** `Standard`
         **Price:-** 
-              **USD:-** `13$`
-              **INR:-** `899₹`
+              **USD:-** `5$`
+              **INR:-** `299₹`
         **DRM Video Limit:-** `Unlimited Videos`
         **validity:-** `30 days`
 
@@ -117,10 +117,10 @@ PLANS_TEXT = '''**Here You will find all of our Premium Plans:-**
 • Payments are non-refundable, and we do not provide refunds.
 • If the service ceases to function, no compensation is provided.
 
-Payment Method:- Binance
+Payment Method:- CRYPTO
 For **INR:-** PhonePay, PayTm, UPI
 
-**Contact  @JV For Subscription**'''
+**Contact  @SHANA_SUPPORT For Subscription**'''
 
 HELP_TEXT = """Here You can find all available Commands:-
     /start :- To start The Bot
@@ -145,7 +145,7 @@ ABOUT_TEXT = """**🄳🅁🄼 🄳🄾🅆🄽🄻🄾🄳🄴 🄱🄾🅃
   ➺ Language  : `English`
   ➺ Owner        : `JV`
   ➺ Release     : `India`
-  ➺ Developer  : @JV
+  ➺ Developer  : @SHANA_SUPPORT
 
 ╚════════✧❁✧════════➩"""
 
@@ -156,7 +156,7 @@ async def filter_subscription(_, __, m):
     if chkUser:
         return True
     await mydb.add_user(m.from_user.id)
-    await m.reply_text("❎ You do not have a subscription\n\n📞 Contact us to buy a subscription [Sadiya](https://t.me/JV)")
+    await m.reply_text("❎ You do not have a subscription\n\n📞 Contact us to buy a subscription [SHANA](https://t.me/SHANA_SUPPORT)")
     return False
 
 static_auth_filter = filters.create(filter_subscription)
@@ -175,7 +175,7 @@ async def callback(_, cb: CallbackQuery):
     if cb.data == "plans":
        await cb.edit_message_text(text=PLANS_TEXT, reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
     if cb.data == "ContactUs":
-       await cb.edit_message_text(text=f"**📞 Contact [Jv](https://t.me/jv)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
+       await cb.edit_message_text(text=f"**📞 Contact [SHANA](https://t.me/SHANA_SUPPORT)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
         
 
 @TGBot.on_message(filters.command("sub") & filters.user(Config.OWNER_ID))
@@ -250,7 +250,7 @@ async def get_subscription(user_id):
 
                **Have a Nice day 😊** """
     else:
-        msg = "**Subscription details:**\n\n    **🎊 Current Plan:** `No Plan`\n          **Plan Name -** `Free`\n          **Is Premium -** `No`\n          **Task Limit -** `No Have`\n     **👑 user:** `Free User`\n     **🎦 videos:** `0 Video`\n     **⏳ expires:** `0 Days`\n\n**🥰 @JV Contact owner for updating subscription.**\n\n               **Have a Nice day 😊**"
+        msg = "**Subscription details:**\n\n    **🎊 Current Plan:** `No Plan`\n          **Plan Name -** `Free`\n          **Is Premium -** `No`\n          **Task Limit -** `No Have`\n     **👑 user:** `Free User`\n     **🎦 videos:** `0 Video`\n     **⏳ expires:** `0 Days`\n\n**🥰 @SHANA_SUPPORT Contact owner for updating subscription.**\n\n               **Have a Nice day 😊**"
     return msg
 
 @TGBot.on_message(filters.command(["plans", "plan"]))
@@ -386,9 +386,9 @@ You can use me to Download DRM protected links to Telegram ⤵️
 
 Here I support Direct DRM links of Zee5, Hotstar etc..................
 
-I can also DRM protected links transloaded from @JV 
+I can also DRM protected links transloaded from @SHANA_SUPPORT 
 
-If you found any issue please contact Support @JV**
+If you found any issue please contact Support @SHANA_SUPPORT**
 
 
 **Bot Uptime:**  `{strftime("hours:%H minutes:%M and seconds:%S" , gmtime(time() - BOT_START_TIME))} ago`""", reply_markup=InlineKeyboardMarkup(ST1))
