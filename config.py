@@ -10,12 +10,12 @@ class Config(object):
     #telegram user session str for 4gb limit
     SESSION_STRING = os.environ.get("SESSION_STRING", "BQGlVqIAaQCW7onbtdCbesyxExwOHWBZeA-bYLODgc95BpZSiHbwqGA0CC8_9EDtVxhSjDnAlLRGO3wM-oFp4CGEWCIn1Q996Xz4jCAlXPbc4eHRI06yRuuE3K_rd1uuBoL2IrdDaOA3447-dwVkdWRhH2yYrisu0NhFPEX4tXORVGhAw6NJSv5wjZ1-wzsRZZFHpTsCPSr8RybxCOWYiBZUpjNc1JPkNBPgr1KU4XOQbvjU")
     #tg bot token
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8177121258:AAE2REls7q2d9RHBI2feC215QG3jnmbtuV0")
     #api id and hash get it from my.telegram.org
-    API_ID = int(os.environ.get("API_ID", 467))
-    API_HASH = os.environ.get("API_HASH", "ff6bc6ad204ca7f5773")
+    API_ID = int(os.environ.get("API_ID", "26910777"))
+    API_HASH = os.environ.get("API_HASH", "8601f2f24993f6fdbcbac3bb27ceec38")
     PROXY = os.environ.get("PROXY", "")
-    DB_URL = os.environ.get("DB_URL", "?retryWrites=true&w=majority&appName=Cluster0")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://King:Cobra765592@cluster0.qy4m5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     OWNER_ID = [int(i) for i in  os.environ.get("OWNER_ID", "7126874550").split(" ")]
     #log channel, where to send logs
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
