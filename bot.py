@@ -246,7 +246,7 @@ async def get_subscription(user_id):
 
 ⬆️ If you want to increase the subscription then see the plan now and contact us admin
 
-  **🥰 @JV Contact owner for updating subscription.**
+  **🥰 @Shana_support Contact owner for updating subscription.**
 
                **Have a Nice day 😊** """
     else:
